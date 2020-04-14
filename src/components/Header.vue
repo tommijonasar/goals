@@ -3,14 +3,14 @@
 </template>
 
 <script>
-  export default {
-    name:"Header"
-  }
+export default {
+  name: "Header",
+};
 </script>
 
 <style lang="scss" scoped>
 h1 {
-  color: #fff;
+  color: var(--lightest);
   font-weight: 300;
   text-transform: uppercase;
   margin: 0;

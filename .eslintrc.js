@@ -28,31 +28,5 @@ module.exports = {
         endOfLine: "auto",
       },
     ],
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        devDependencies: ["build/**.js", "**/*.stories.js", "**/*.spec.js"],
-      },
-    ],
-    "import/extensions": [
-      "error",
-      "always",
-      {
-        js: "never",
-        mjs: "never",
-        jsx: "never",
-        ts: "never",
-        tsx: "never",
-        vue: "never",
-      },
-    ],
-  },
-  settings: {
-    "import/resolver": {
-      node: {}, // this has to be above webpack.
-      webpack: {
-        config: "build/webpack.config.base.js",
-      },
-    },
   },
 };

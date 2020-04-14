@@ -1,30 +1,25 @@
 <template>
   <div class="subheader-container">
     <span class="main-text">{{ header }}</span>
-    <span class="support-text" v-if="supportText">{{ supportText }}</span>
   </div>
 </template>
 
 <script>
-  export default {
-    name:"SubHeader",
-    props: {
-      header: {
-        type: String,
-        default: ""
-      },
-      supportText: {
-        type: String,
-        default: ""
-      }
+export default {
+  name: "SubHeader",
+  props: {
+    header: {
+      type: String,
+      default: "",
     },
-  }
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .subheader-container {
   margin-top: 25px;
-  color:#FB8C48;
+  color: var(--accent-dark);
   text-transform: uppercase;
   display: flex;
   align-items: baseline;
